@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+{% block content %}
+<h1>Summary</h1>
+<p>In order to use this context route you have to specify X and Y as a query string!</p>
+{% if result %}
+<p>X = {{x}}<br>Y = {{y}}<br>Result: {{result}}</p>
+{% else %}
+<p>There are no arguments!</p>
+<p>Example: <a href="http://127.0.0.1:8000/sum/?x=99&y=33">http://127.0.0.1:8000/sum/?x=99&y=33</a></p>
+{% endif %}
+{% endblock content %}

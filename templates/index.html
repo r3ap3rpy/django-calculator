@@ -1,0 +1,8 @@
+
+{% extends 'main.html' %}
+
+{% block content %}
+<a href = "{% url 'sum' %}">Let's sum things up!</a><br>
+<a href = "{% url 'multiply' %}">Let's multiply things!</a><br>
+<a href = "{% url 'divide' %}">Let's divide things!</a><br>
+{% endblock content %}
